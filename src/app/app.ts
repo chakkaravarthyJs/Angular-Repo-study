@@ -249,6 +249,7 @@ export class App implements OnInit {
   ngOnInit(): void {
     this.form = this.fb?.group({
       name: [null, [Validators.required]],
+      age: [null]
     })
     this.dataSource.paginator = this.paginator();
   }
